@@ -8,6 +8,5 @@ public class CardHunterMain extends JavaPlugin {
     public void onEnable(){
         // Hello World
         System.out.print("Hello World!");
-        System.out.print("WTF");
     }
 }
