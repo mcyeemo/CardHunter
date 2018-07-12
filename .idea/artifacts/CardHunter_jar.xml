@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="CardHunter:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/CardHunter_jar</output-path>
+    <output-path>$USER_HOME$/Desktop/Server/plugins</output-path>
     <root id="archive" name="CardHunter.jar">
       <element id="module-output" name="CardHunter" />
       <element id="file-copy" path="$PROJECT_DIR$/resource/plugin.yml" />
