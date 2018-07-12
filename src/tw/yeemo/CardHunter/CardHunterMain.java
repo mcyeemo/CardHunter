@@ -6,6 +6,7 @@ public class CardHunterMain extends JavaPlugin {
 
     @Override
     public void onEnable(){
+        // Hello World
         System.out.print("Hello World!");
     }
 }
