@@ -8,5 +8,6 @@ public class CardHunterMain extends JavaPlugin {
     public void onEnable(){
         // Hello World
         getServer().getLogger().info("Info");
+
     }
 }
