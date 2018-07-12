@@ -7,7 +7,7 @@ public class CardHunterMain extends JavaPlugin {
     @Override
     public void onEnable(){
         // Hello World
-        getServer().getLogger().info("Hello World!");
+        getServer().getLogger().info("PANG_HU");
 
     }
 }
