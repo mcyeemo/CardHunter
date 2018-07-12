@@ -13,6 +13,7 @@ public class OpenGUI implements Listener {
             event.getPlayer().sendRawMessage("87");
             return;
         }
+        event.setCancelled(true);
         event.getPlayer().sendRawMessage(event.getItem().getType().toString());
     }
 }
