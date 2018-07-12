@@ -11,6 +11,5 @@ public class OpenGUI implements Listener {
     public void OGUI(PlayerInteractEvent event) {
         if (event.getItem() == null || event.getItem().getType() != Material.BOOK) return;
         event.setCancelled(true);
-        event.getPlayer().sendRawMessage(event.getItem().getType().toString());
     }
 }
