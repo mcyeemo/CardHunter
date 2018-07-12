@@ -8,12 +8,11 @@ import org.bukkit.event.player.PlayerInteractEvent;
 public class OpenGUI implements Listener {
 
     @EventHandler
-    public void OGUI(PlayerInteractEvent event){
-        if (event.getItem() == null && event.getItem().getType() != Material.BOOK ){
+    public void OGUI(PlayerInteractEvent event) {
+        if (event.getItem() == null || event.getItem().getType() != Material.BOOK) {
             event.getPlayer().sendRawMessage("87");
             return;
-        }else {
-            event.getPlayer().sendRawMessage("good");
         }
+        event.getPlayer().sendRawMessage(event.getItem().getType().toString());
     }
 }
