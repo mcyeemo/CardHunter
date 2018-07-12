@@ -1,17 +1,21 @@
 package tw.yeemo.CardHunter;
 
+import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
-import tw.yeemo.CardHunter.events.OpenGUI;
 
 public class CardHunterMain extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Hello World
-        getServer().getLogger().info("PANG_HU");
+        // Config
+        getConfig().options().header("Show Debug Message");
+        getConfig().addDefault("Debug", true);
+        getConfig().options().copyDefaults(true);
+        this.saveConfig();
+    }
 
-        //Register Event
-        getServer().getPluginManager().registerEvents(new OpenGUI(),this);
-
+    public void debug(String msg) {
+        if(!getConfig().getBoolean("Debug")) return;
+        getServer().getConsoleSender().sendRawMessage(ChatColor.RED + "(DEBUG) - " + ChatColor.GOLD + msg);
     }
 }
