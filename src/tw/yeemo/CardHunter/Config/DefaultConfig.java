@@ -4,8 +4,8 @@ import java.io.File;
 
 public class DefaultConfig extends CustomConfig {
 
-    public DefaultConfig(File dataFolder, String name) {
-        super(dataFolder.toString(), name);
+    public DefaultConfig(File file, String name) {
+        super(file.toString(), name);
     }
 
     @Override

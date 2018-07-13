@@ -10,8 +10,6 @@ public class PlayerDataConfig extends CustomConfig {
 
     @Override
     protected void init() {
-        getConfig().options().header("abc");
-        getConfig().addDefault("test","test");
-
+        getConfig().options().header("this is player data storage, Don't Touch!!");
     }
 }
