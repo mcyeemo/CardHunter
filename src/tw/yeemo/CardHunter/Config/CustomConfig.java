@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public abstract class CustomConfig {
 
-    public CustomConfig(String path, String fileName) {
+    CustomConfig(String path, String fileName) {
         file = new File(path, fileName);
         config = YamlConfiguration.loadConfiguration(file);
         init();
@@ -18,14 +18,14 @@ public abstract class CustomConfig {
 
     protected abstract void init();
 
-    protected File file;
-    protected FileConfiguration config;
+    private File file;
+    private FileConfiguration config;
 
-    protected FileConfiguration getConfig() {
+    public FileConfiguration getConfig() {
         return config;
     }
 
-    protected void saveConfig(){
+    public void saveConfig(){
         try {
             config.save(file);
         } catch (IOException e) {
@@ -33,7 +33,7 @@ public abstract class CustomConfig {
         }
     }
 
-    protected void reloadConfig(){
+    public void reloadConfig(){
         config = YamlConfiguration.loadConfiguration(file);
     }
 }

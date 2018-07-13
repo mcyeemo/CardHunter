@@ -8,13 +8,15 @@ public class FileManager {
 
     private CardHunterMain plugin;
 
+    public static DefaultConfig config;
+    public static PlayerDataConfig playerdata;
+
     public FileManager(CardHunterMain plugin){
         this.plugin = plugin;
     }
 
-
     public void init() {
-        new DefaultConfig(plugin.getDataFolder(), "config.yml");
-        new PlayerDataConfig(plugin.getDataFolder(), "playerdata.yml");
+        config = new DefaultConfig(plugin.getDataFolder(), "config.yml");
+        playerdata = new PlayerDataConfig(plugin.getDataFolder(), "playerdata.yml");
     }
 }
