@@ -3,8 +3,9 @@
     <output-path>D:/Server/plugins</output-path>
     <root id="archive" name="CardHunter.jar">
       <element id="module-output" name="CardHunter" />
-      <element id="file-copy" path="$PROJECT_DIR$/resource/plugin.yml" />
       <element id="file-copy" path="$PROJECT_DIR$/resource/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/resource/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/resource/playerdata.yml" />
     </root>
   </artifact>
 </component>

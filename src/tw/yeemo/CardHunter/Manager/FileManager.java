@@ -2,6 +2,7 @@ package tw.yeemo.CardHunter.Manager;
 
 import tw.yeemo.CardHunter.CardHunterMain;
 import tw.yeemo.CardHunter.Config.DefaultConfig;
+import tw.yeemo.CardHunter.Config.PlayerDataConfig;
 
 public class FileManager {
 
@@ -14,5 +15,6 @@ public class FileManager {
 
     public void init() {
         new DefaultConfig(plugin.getDataFolder(), "config.yml");
+        new PlayerDataConfig(plugin.getDataFolder(), "playerdata.yml");
     }
 }
