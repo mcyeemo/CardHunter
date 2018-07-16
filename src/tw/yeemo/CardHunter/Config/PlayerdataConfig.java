@@ -2,9 +2,9 @@ package tw.yeemo.CardHunter.Config;
 
 import java.io.File;
 
-public class PlayerDataConfig extends CustomConfig {
+public class PlayerdataConfig extends CustomConfig {
 
-    public PlayerDataConfig(File file, String fileName) {
+    public PlayerdataConfig(File file, String fileName) {
         super(file.toString(), fileName);
     }
 

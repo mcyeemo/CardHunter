@@ -2,6 +2,8 @@ package tw.yeemo.CardHunter.Config;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import tw.yeemo.CardHunter.CardHunterMain;
+import tw.yeemo.CardHunter.utils.ConsoleColor;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,6 +16,7 @@ public abstract class CustomConfig {
         init();
         getConfig().options().copyDefaults(true);
         saveConfig();
+        CardHunterMain.debug("Read the Config file of " + ConsoleColor.GREEN + fileName);
     }
 
     protected abstract void init();
